@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN sudo apt-get update && apt-get -y install gnupg git git-buildpackage gbp debhelper openstack-pkg-tools python-all python-yaml salt-master
+RUN sudo apt-get update && apt-get -y install gnupg git git-buildpackage debhelper openstack-pkg-tools python-all python-yaml salt-master
 
 ADD files/public.key /gpgkeys/
 ADD files/private.key /gpgkeys/
